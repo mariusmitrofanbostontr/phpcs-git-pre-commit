@@ -9,22 +9,22 @@ Inspired by [Enforce code standards with composer, git hooks, and phpcs](http://
 
 ## Installation
 
-Install `smgladkovskiy/phpcs-git-pre-commit` with composer require command:
+Install `mariusmitrofanbostontr/phpcs-git-pre-commit` with composer require command:
 
-    composer require --dev "smgladkovskiy/phpcs-git-pre-commit"
+    composer require --dev "mariusmitrofanbostontr/phpcs-git-pre-commit"
 
-Or alternatively, include a dependency for `smgladkovskiy/phpcs-git-pre-commit` in your composer.json file manually:
+Or alternatively, include a dependency for `mariusmitrofanbostontr/phpcs-git-pre-commit` in your composer.json file manually:
 
     {
         "require-dev": {
-            "smgladkovskiy/phpcs-git-pre-commit": "dev-master"
+            "mariusmitrofanbostontr/phpcs-git-pre-commit": "dev-master"
         }
     }
 
 To enable code sniff, аdd to `post-install-cmd` and `post-update-cmd` in `composer.json` installation script:
 
     "scripts": {
-        "install-hooks": ["sh ./vendor/smgladkovskiy/phpcs-git-pre-commit/src/setup.sh"],
+        "install-hooks": ["sh ./vendor/mariusmitrofanbostontr/phpcs-git-pre-commit/src/setup.sh"],
         "post-install-cmd": ["@install-hooks"],
         "post-update-cmd": ["@install-hooks"]
     }
@@ -35,7 +35,7 @@ Then run `composer install` or `composer update`. `pre-commit` hook will be inst
 
 Run `git commit` and pre-commit hook will check your committed files like if you run
 
-    php phpcs.phar --standard=PSR2 --encoding=utf-8 -n -p /path/to/file.php
+    php backend/phpcs.phar --standard=PSR2 --encoding=utf-8 -n -p /path/to/file.php
 
 ## Contributing
 
