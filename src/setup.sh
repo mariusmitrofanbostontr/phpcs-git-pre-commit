@@ -7,6 +7,7 @@ else
     PRE_COMMIT_EXISTS=0
 fi
 
+mkdir -p ../.git/hooks/
 cp ./vendor/mariusmitrofanbostontr/phpcs-git-pre-commit/src/pre-commit ../.git/hooks/pre-commit
 chmod +x ../.git/hooks/pre-commit
 
