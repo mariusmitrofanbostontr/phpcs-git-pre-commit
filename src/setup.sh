@@ -8,4 +8,4 @@ mkdir -p ../.git/hooks/
 cp ./vendor/mariusmitrofanbostontr/phpcs-git-pre-commit/src/pre-commit ../.git/hooks/pre-commit
 chmod +x ../.git/hooks/pre-commit
 
-"Pre-commit git hook is updated!"
+echo "Pre-commit git hook is updated!"
